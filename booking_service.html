@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        .radio-button {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .radio-button input[type="radio"] {
+            display: none;
+        }
+
+        .radio-button label {
+            display: inline-block;
+            padding: 30px 50px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 12px;
+        }
+
+        label{
+            color: #7E8383;
+        }
+
+        .radio-button input[type="radio"]:checked + label {
+            background-color: #FFC3A1;
+            color: #D3756B;
+            border: 1px solid #D3756B;
+        }
+    </style>
+    <style>
+        .radio-button-avail {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .radio-button-avail input[type="radio"] {
+            display: none;
+        }
+
+        .radio-button-avail label {
+            display: inline-block;
+            padding-left: 20px !important;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 12px;
+            color: #7E8383;
+        }
+
+        .radio-button-avail input[type="radio"]:checked + label {
+            background-color: #FFC3A1;
+            color: #D3756B;
+            border: 1px solid #D3756B;
+        }
+    </style>
+
+    <style>
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        th,
+        td {
+        padding: 12px;
+        text-align: center;
+        font-size: 20px;
+        }
+
+        th {
+        color: #2C3333;
+        font-size: 20px;
+        font-weight: normal;
+        }
+
+        input[type='radio'] {
+        transform: scale(1.5);
+        display: none;
+        }
+
+        .dates[type='radio']:checked + label {
+        background-color: #fff;
+        color: #2C3333;
+        padding: 7px 10px;
+        border-radius: 12px;
+        }
+
+        table td:first-child,
+        table th:first-child {
+        padding-left: 20px;
+        }
+
+        table td:last-child,
+        table th:last-child {
+        padding-right: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h6 class="logo"><a href="./booking_service.html">LuxeLook.</a></h6>
+            <ul class="ul-header">
+                <li><a href="./home_page.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+            </ul>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="my-svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>          
+        </div>                                                                                                                              
+    </header>
+
+    <div class="haircut-service">
+        <div class="haircut-services-flex">
+            <h6 style="font-size: 40px; font-weight: 600; letter-spacing: 0.02em; text-transform: capitalize; color: #2C3333;">Haircut Services</h6>
+            <h6 style="font-weight: 600; font-size: 22px; line-height: 26px; text-transform: capitalize; color: #2C3333; margin-top: 30px; margin-bottom: 20px;">haircut Specialist</h6>
+            <div class="haircut-service-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                    <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                </svg>
+                <div class="card">
+                    <div class="haircut-service-flex">
+                        <div class="info-haircut">
+                            <h6 class="name">kenneth teodoro</h6>
+                            <h6 class="position">Salon Haircut</h6>
+                            <h6 class="number">0987228887</h6>
+                            <h6 class="rating"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>4.7</h6>
+                              <button class="view-profile-btn"><a href="">View Profile</a></button>
+                        </div>
+                        <img class="img-profile" src="./images/profile.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="haircut-service-flex">
+                        <div class="info-haircut">
+                            <h6 class="name">kenneth teodoro</h6>
+                            <h6 class="position">Salon Haircut</h6>
+                            <h6 class="number">0987228887</h6>
+                            <h6 class="rating"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>4.7</h6>
+                              <button class="view-profile-btn"><a href="">View Profile</a></button>
+                        </div>
+                        <img class="img-profile" src="./images/profile.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="haircut-service-flex">
+                        <div class="info-haircut">
+                            <h6 class="name">kenneth teodoro</h6>
+                            <h6 class="position">Salon Haircut</h6>
+                            <h6 class="number">0987228887</h6>
+                            <h6 class="rating"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>4.7</h6>
+                              <button class="view-profile-btn"><a href="">View Profile</a></button>
+                        </div>
+                        <img class="img-profile" src="./images/profile.png" alt="">
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                    <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="calendar">
+        <div class="calendar-center">
+            <div style="margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center;" class="title-calendar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                    <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                </svg><h6>March</h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                    <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg>
+            </div>
+            <table>
+                <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input class="dates" type="radio" name="day" value="1" id="day1" /><label for="day1">1</label></td>
+                        <td><input class="dates" type="radio" name="day" value="2" id="day2" /><label for="day2">2</label></td>
+                        <td><input class="dates" type="radio" name="day" value="3" id="day3" /><label for="day3">3</label></td>
+                        <td><input class="dates" type="radio" name="day" value="4" id="day4" /><label for="day4">4</label></td>
+                        <td><input class="dates" type="radio" name="day" value="5" id="day5" /><label for="day5">5</label></td>
+                        <td><input class="dates" type="radio" name="day" value="6" id="day6" /><label for="day6">6</label></td>
+                        <td><input class="dates" type="radio" name="day" value="7" id="day7" /><label for="day7">7</label></td>
+                      </tr>
+                      <tr>
+                        <td><input class="dates" type="radio" name="day" value="8" id="day8" /><label for="day8">8</label></td>
+                        <td><input class="dates" type="radio" name="day" value="9" id="day9" /><label for="day9">9</label></td>
+                        <td><input class="dates" type="radio" name="day" value="10" id="day10" /><label for="day10">10</label></td>
+                        <td><input class="dates" type="radio" name="day" value="11" id="day11" /><label for="day11">11</label></td>
+                        <td><input class="dates" type="radio" name="day" value="12" id="day12" /><label for="day12">12</label></td>
+                        <td><input class="dates" type="radio" name="day" value="13" id="day13" /><label for="day13">13</label></td>
+                        <td><input class="dates" type="radio" name="day" value="14" id="day14" /><label for="day14">14</label></td>
+                      </tr>
+                      <tr>
+                        <td><input class="dates" type="radio" name="day" value="15" id="day15" /><label for="day15">15</label></td>
+                        <td><input class="dates" type="radio" name="day" value="16" id="day16" /><label for="day16">16</label></td>
+                        <td><input class="dates" type="radio" name="day" value="17" id="day17" /><label for="day17">17</label></td>
+                        <td><input class="dates" type="radio" name="day" value="18" id="day18" /><label for="day18">18</label></td>
+                        <td><input class="dates" type="radio" name="day" value="19" id="day19" /><label for="day19">19</label></td>
+                        <td><input class="dates" type="radio" name="day" value="20" id="day20" /><label for="day20">20</label></td>
+                        <td><input class="dates" type="radio" name="day" value="21" id="day21" /><label for="day21">21</label></td>
+                      </tr>
+                      <tr>
+                        <td><input class="dates" type="radio" name="day" value="22" id="day22" /><label for="day22">22</label></td>
+                        <td><input class="dates" type="radio" name="day" value="23" id="day23" /><label for="day23">23</label></td>
+                        <td><input class="dates" type="radio" name="day" value="24" id="day24" /><label for="day24">24</label></td>
+                        <td><input class="dates" type="radio" name="day" value="25" id="day25" /><label for="day25">25</label></td>
+                        <td><input class="dates" type="radio" name="day" value="26" id="day26" /><label for="day26">26</label></td>
+                        <td><input class="dates" type="radio" name="day" value="27" id="day27" /><label for="day27">27</label></td>
+                        <td><input class="dates" type="radio" name="day" value="28" id="day28" /><label for="day28">28</label></td>
+                      </tr>
+                      <tr>
+                        <td><input class="dates" type="radio" name="day" value="29" id="day29" /><label for="day29">29</label></td>
+                        <td><input class="dates" type="radio" name="day" value="30" id="day30" /><label for="day30">30</label></td>
+                        <td><input class="dates" type="radio" name="day" value="31" id="day31" /><label for="day31">31</label></td>
+                      </tr>
+                </tbody>
+                </table>
+
+
+        </div>
+    </div>
+
+    <div class="available-slot">
+        <div class="available-slot-center">
+            <div class="title-available-slot">
+                <h6>Available Slot</h6>
+            </div>
+            <div style="display: flex; justify-content: start;">
+                <div class="available-slot-flex">
+                    <div class="radio-button">
+                        <input type="radio" id="option1" name="options">
+                        <label for="option1">10:30-11:30  AM</label>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" id="option2" name="options">
+                        <label for="option2">12:30-01:30  PM</label>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" id="option3" name="options">
+                        <label for="option3">12:30-01:30  PM</label>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" id="option4" name="options">
+                        <label for="option4">12:30-01:30  PM</label>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: start;">
+                <div style="margin-top: 20px;" class="available-slot-flex">
+                    <div class="radio-button">
+                        <input type="radio" id="option5" name="options">
+                        <label for="option5">10:30-11:30  AM</label>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" id="option6" name="options">
+                        <label for="option6">12:30-01:30  PM</label>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 50px;" class="hr"></div>
+        </div>
+    </div>
+
+    <div class="available-slot">
+        <div class="available-slot-center">
+            <div class="title-available-slot">
+                <h6>Available Haircut Specialist</h6>
+            </div>
+            <div style="display: flex; justify-content: start;">
+                <div class="available-slot-flex">
+                    <div class="radio-button-avail">
+                        <input type="radio" id="option10" name="options">
+                        <label for="option10">
+                        <div class="card">
+                            <div class="haircut-service-flex">
+                            <div class="info-haircut">
+                                <h6 class="name">kenneth teodoro</h6>
+                                <h6 class="position">Salon Haircut</h6>
+                                <h6 class="name">₱ 230.00</h6>
+                            </div>
+                            <img class="img-profile" src="./images/profile.png" alt="">
+                            </div>
+                        </div>
+                        </label>
+                    </div>
+                    <div class="radio-button-avail">
+                        <input type="radio" id="option11" name="options">
+                        <label for="option11">
+                        <div class="card">
+                            <div class="haircut-service-flex">
+                            <div class="info-haircut">
+                                <h6 class="name">kenneth teodoro</h6>
+                                <h6 class="position">Salon Haircut</h6>
+                                <h6 class="name">₱ 230.00</h6>
+                            </div>
+                            <img class="img-profile" src="./images/profile.png" alt="">
+                            </div>
+                        </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 50px;" class="hr"></div>
+        </div>
+    </div>
+
+    <div style="height: 170px !important;" class="available-slot">
+        <div class="available-slot-center">
+            <div style="display: flex; justify-content: end;">
+                <div class="available-slot-flex">
+                    <button style="margin-right: 2px;"><a href="">Cancel</a></button>
+                    <button class="next"><a href="booking_submit.html">Next</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

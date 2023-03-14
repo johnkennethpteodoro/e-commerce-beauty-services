@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        .radio-button {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .radio-button input[type="radio"] {
+            display: none;
+        }
+
+        .radio-button label {
+            display: inline-block;
+            padding: 30px 50px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 12px;
+        }
+
+        label{
+            color: #7E8383;
+        }
+
+        .radio-button input[type="radio"]:checked + label {
+            background-color: #FFC3A1;
+            color: #D3756B;
+            border: 1px solid #D3756B;
+        }
+    </style>
+    <style>
+        .radio-button-avail {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .radio-button-avail input[type="radio"] {
+            display: none;
+        }
+
+        .radio-button-avail label {
+            display: inline-block;
+            padding-left: 20px !important;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 12px;
+            color: #7E8383;
+        }
+
+        .radio-button-avail input[type="radio"]:checked + label {
+            background-color: #FFC3A1;
+            color: #D3756B;
+            border: 1px solid #D3756B;
+        }
+    </style>
+
+    <style>
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        th,
+        td {
+        padding: 12px;
+        text-align: center;
+        font-size: 20px;
+        }
+
+        th {
+        color: #2C3333;
+        font-size: 20px;
+        font-weight: normal;
+        }
+
+        input[type='radio'] {
+        transform: scale(1.5);
+        display: none;
+        }
+
+        .dates[type='radio']:checked + label {
+        background-color: #fff;
+        color: #2C3333;
+        padding: 7px 10px;
+        border-radius: 12px;
+        }
+
+        table td:first-child,
+        table th:first-child {
+        padding-left: 20px;
+        }
+
+        table td:last-child,
+        table th:last-child {
+        padding-right: 20px;
+        }
+        .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        }
+
+        .form-group label {
+        margin-bottom: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h6 class="logo"><a href="./booking_service.html">LuxeLook.</a></h6>
+            <ul class="ul-header">
+                <li><a href="./home_page.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+            </ul>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="my-svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>          
+        </div>                                                                                                                              
+    </header>
+
+    <div class="haircut-service">
+        <div class="haircut-services-flex">
+            <h6 style="font-size: 40px; font-weight: 600; letter-spacing: 0.02em; text-transform: capitalize; color: #2C3333;">Your Information</h6>
+            <h6 style="font-weight: 600; font-size: 18px; line-height: 26px; text-transform: capitalize; color: #C82525; margin-top: 5px; margin-bottom: 20px;">Required *</h6>
+            <div class="haircut-service-flex">
+                <div class="form-group">
+                    <label style="font-size: 16px; color: #2C3333; font-weight: 500;" for="first-name">First Name <span style="color: red;">*</span></label>
+                    <input style="width: 345px; height: 50px; border-radius: 8px; border: none; background: #D9D9D9; padding: 12px;" type="text" id="first-name" name="first-name">
+                </div>
+                <div class="form-group">
+                <label style="font-size: 16px; color: #2C3333; font-weight: 500;" for="first-name">Last Name <span style="color: red;">*</span></label>
+                <input style="width: 345px; height: 50px; border-radius: 8px; border: none; background: #D9D9D9; padding: 12px;" type="text" id="first-name" name="first-name">
+                </div>
+                <div class="form-group">
+                <label style="font-size: 16px; color: #2C3333; font-weight: 500;" for="first-name">Phone <span style="color: red;">*</span></label>
+                <input style="width: 345px; height: 50px; border-radius: 8px; border: none; background: #D9D9D9; padding: 12px;" type="text" id="first-name" name="first-name">
+                </div>
+            </div>
+            <div style="margin-top: 20px; width: 705px;" class="haircut-service-flex">
+                <div class="form-group">
+                    <label style="font-size: 16px; color: #2C3333; font-weight: 500;" for="first-name">Address <span style="color: red;">*</span></label>
+                    <input style="width: 345px; height: 50px; border-radius: 8px; border: none; background: #D9D9D9; padding: 12px;" type="text" id="first-name" name="first-name">
+                </div>
+                <div class="form-group">
+                <label style="font-size: 16px; color: #2C3333; font-weight: 500;" for="first-name">Email <span style="color: red;">*</span></label>
+                <input style="width: 345px; height: 50px; border-radius: 8px; border: none; background: #D9D9D9; padding: 12px;" type="text" id="first-name" name="first-name">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 100px !important;" class="available-slot">
+        <div class="available-slot-center">
+            <div style="display: flex; justify-content: end;">
+                <div class="available-slot-flex">
+                    <button style="margin-right: 2px; background: #7E8383 !important;"><a href="booking_service.html">Back</a></button>
+                    <button class="next"><a href="">Submit</a></button>
+                </div>
+            </div>
+            <div style="margin-top: 50px;" class="hr"></div>
+        </div>
+    </div>
+
+    <div class="booking-overview">
+        <div class="booking-overview-flex">
+            <h6 style="font-size: 40px; font-weight: 600; letter-spacing: 0.02em; text-transform: capitalize; color: #2C3333;">Booking Appointment Details</h6>
+            <h6 style="color: #2C3333; font-size: 18px; margin-top: 10px; margin-bottom: 20px; font-weight: normal;">Confirm your services</h6>
+            <div style="display: flex; justify-content: space-between;">
+                <div class="overview-info">
+                    <h6 class="oi-title">Haircut - Senior Stylist</h6>
+                    <div style="display: flex; justify-content: space-between; width: 180px;">
+                        <h6 class="oi-price">₱ 200.00</h6>
+                        <h6 class="oi-rate">4.7</h6>
+                    </div>
+                    <h6 style="font-size: 18px; font-weight: normal; margin-top: 20px; margin-bottom: 20px;">Keep a clean and sanitary work area, including tools and equipment</h6>
+                </div>
+                <div style="margin-top: 20px;"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                  </svg></a></div>
+            </div>
+            <h6 style="text-align: center; color: #D3756B; text-decoration: underline; font-size: 18px; margin-top: 12px;">Add more services +</h6>
+            <div style="margin-top: 24px;" class="hr"></div>
+
+            <h6 style="color: #2C3333; font-size: 18px; margin-top: 20px; font-weight: 600;">Date and Time </h6>
+            <h6 style="color: #2C3333; font-size: 16px; margin-top: 10px; margin-bottom: 20px; font-weight: normal;">March 10, 2023 <span>02:30-03:30 PM</span></h6>
+            <div style="margin-top: 24px;" class="hr"></div>
+            <div style="display: flex; justify-content: space-between;">
+                <div>
+                    <h6 style="color: #2C3333; font-size: 16px; margin-top: 20px; font-weight: normal;">Service Total</h6>
+                    <h6 style="color: #2C3333; font-size: 16px; margin-top: 6px; font-weight: normal;">Charges</h6>
+                    <h6 style="color: #2C3333; font-size: 16px; margin-top: 6px; font-weight: 600;">Grand Total</h6>
+                </div>
+                <div>
+                    <h6 style="color: #2C3333; font-size: 16px; margin-top: 20px; font-weight: normal;">₱ 200.00</h6>
+                    <h6 style="color: #2C3333; font-size: 16px; margin-top: 6px; font-weight: normal;">₱ 80.00</h6>
+                    <h6 style="color: #2C3333; font-size: 16px; margin-top: 6px; font-weight: 600;">₱ 280.00</h6>
+                </div>
+            </div>
+            <div style="margin-top: 24px;" class="hr"></div>
+            <h6 style="color: #2C3333; font-size: 18px; margin-top: 20px; font-weight: 600;">Your Details</h6>
+            <div style="display: flex; justify-content: space-between; ">
+                <div>
+                    <h6 style="color: #2C3333; font-size: 16px; margin-top: 20px; font-weight: normal;">John Kenneth Teodoro </h6>
+                    <h6 style="color: #2C3333; font-size: 16px; margin-top: 7px; font-weight: normal;">0987228887</h6>
+                    <h6 style="color: #2C3333; font-size: 16px; margin-top: 7px; font-weight: normal;">Commonwealth Quezon City</h6>
+                    <h6 style="color: #2C3333; font-size: 16px; margin-top: 7px; font-weight: normal;">johnkennethpteoodoro@gmail.com</h6>
+                </div>
+                <div style="margin-top: 20px;">
+                    <h6 style="text-align: center; color: #D3756B; text-decoration: underline; font-size: 18px; margin-top: 12px;"><a style="color: #D3756B; text-decoration: underline; font-size: 18px;" href="">Change</a></h6>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 100px !important;" class="available-slot">
+        <div class="available-slot-center">
+            <div style="display: flex; justify-content: center;">
+                <div class="available-slot-flex">
+                    <button class="next"><a href="">Pay ₱280 and Confirm Booking</a></button>
+                </div>
+            </div>
+            <div style="margin-top: 50px;" class="hr"></div>
+        </div>
+    </div>
+
+</body>
+</html>
