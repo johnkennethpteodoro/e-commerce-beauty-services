@@ -52,6 +52,115 @@ header .header .my-svg {
   margin-right: 218px;
 }
 
+/* Media queries */
+@media only screen and (max-width: 767px) {
+  header {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    background-color: #FFC3A1;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 40.5%;
+  }
+  header .header {
+    background: #FFC3A1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 5px;
+  }
+  header .header .ul-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 438px;
+  }
+  header .header .logo a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #A75D5D;
+    margin-left: 215px;
+    display: none;
+  }
+  header .header li a {
+    font-size: 16px;
+    color: #2C3333 !important;
+    transition: background-color 0.2s ease-in-out;
+  }
+  header .header li a:hover {
+    font-weight: 600;
+  }
+  header .header .my-svg {
+    width: 20px;
+    height: 20px;
+    color: #A75D5D;
+    margin-right: 218px;
+    display: none;
+  }
+  .hero {
+    width: 320px !important;
+    height: 630px !important;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+    background-color: #FFC3A1;
+  }
+  .hero .hero-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero .heading {
+    width: 300px !important;
+    font-weight: 700;
+    font-size: 30px !important;
+    line-height: 37px !important;
+    text-transform: capitalize;
+    margin-top: -20px !important;
+    margin-left: 10px !important;
+    color: #2C3333;
+  }
+  .hero .sub-heading {
+    width: 300px !important;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    text-transform: capitalize;
+    color: #395B64;
+    margin-top: 7px;
+    margin-left: 10px !important;
+  }
+  .hero .btn-hero {
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #fff;
+    background: #A75D5D;
+    border: none;
+    padding: 10px 15px !important;
+    margin-top: 28px !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: background-color 0.2s ease-in-out;
+    margin-left: 10px !important;
+  }
+  .hero .btn-hero a {
+    color: #fff;
+  }
+  .hero .btn-hero:hover {
+    background-color: #944141;
+  }
+  .hero .image-hero img {
+    margin-bottom: -250px;
+    width: 522px;
+    height: 483px;
+    display: none;
+  }
+}
 .hero {
   width: 100%;
   height: 730px;
@@ -399,78 +508,6 @@ header .header .my-svg {
   color: #395B64;
 }
 
-@media only screen and (max-width: 767px) {
-  header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background-color: #FFC3A1;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  }
-  header .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-  }
-  header .header .logo {
-    font-size: 18px;
-    margin-right: auto;
-  }
-  header .header .menu-toggle {
-    display: block;
-    width: 25px;
-    height: 25px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-  }
-  header .header .menu-toggle .icon-bar {
-    display: block;
-    width: 100%;
-    height: 2px;
-    margin: 4px auto;
-    background-color: #2C3333;
-    border-radius: 1px;
-    transition: all 0.2s ease-in-out;
-  }
-  header .header .menu-toggle .icon-bar:first-child {
-    margin-top: 0;
-  }
-  header .header .menu-toggle .icon-bar:last-child {
-    margin-bottom: 0;
-  }
-  header .header .menu-toggle.active .icon-bar:first-child {
-    transform: translateY(6px) rotate(45deg);
-  }
-  header .header .menu-toggle.active .icon-bar:last-child {
-    transform: translateY(-6px) rotate(-45deg);
-  }
-  header .header .menu-toggle.active .icon-bar:nth-child(2) {
-    opacity: 0;
-  }
-  header .header .ul-header {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-  header .header .ul-header li {
-    margin-bottom: 10px;
-  }
-  header .header .ul-header li a {
-    font-size: 14px;
-    color: #2C3333;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  header .header .ul-header li a:hover {
-    background-color: #A75D5D;
-    color: white;
-  }
-}
 .haircut-service {
   height: 605px;
   width: 100%;

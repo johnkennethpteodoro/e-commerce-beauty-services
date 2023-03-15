@@ -62,6 +62,115 @@ header{
     }
 }
 
+ /* Media queries */
+@media only screen and (max-width: 767px) {
+    header{
+        // position: relative;
+        position: fixed;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        background-color: $primary-color;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        width: 40.5%;
+        .header{
+            background: $primary-color;
+            @include flexCenter();
+            width: 100%;
+            padding: 20px 5px;
+            .ul-header{
+                @include flexCenter();
+                width: 438px;
+            }
+            .logo a{
+                font-size: 20px;
+                font-weight: 700;
+                color: $secondary-color;
+                margin-left: 215px;
+                display: none;
+            }
+            li a{
+                font-size: 16px;
+                color: $primary-font-color !important;
+                transition: background-color 0.2s ease-in-out;
+                &:hover{
+                    font-weight: 600;
+                }
+            }
+            .my-svg {
+                width: 20px;
+                height: 20px;
+                color: $secondary-color;
+                margin-right: 218px;
+                display: none;
+            }
+        }
+    }
+
+    .hero{
+        width: 320px !important;
+        height: 630px !important;
+        left: 0px;
+        top: 0px;
+        display: flex;
+        justify-content: center;
+        filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+        background-color: $primary-color;
+        .hero-flex{
+            @include flexCenter();
+        }
+        .heading{
+            width: 300px !important;
+            font-weight: 700;
+            font-size:30px !important;
+            line-height: 37px !important;
+            text-transform: capitalize;
+            margin-top: -20px !important;
+            margin-left: 10px !important;
+    
+            color: $primary-font-color
+        }
+        .sub-heading{
+            width: 300px !important;
+            font-weight: 400;
+            font-size: 16px !important;
+            line-height: 22px !important;
+            text-transform: capitalize;
+            color: #395B64;
+            margin-top: 7px;
+            margin-left: 10px !important;
+        }
+        .btn-hero{
+            font-weight: 400;
+            font-size: 16px !important;
+            line-height: 28px;
+            text-transform: capitalize;
+            color: $white;
+            background: $secondary-color;
+            border: none;
+            padding: 10px 15px !important;
+            margin-top: 28px !important;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            transition: background-color 0.2s ease-in-out;
+            margin-left: 10px !important;
+            a{
+                color: $white;
+            }
+            &:hover {
+                background-color: #944141;
+            }
+        }
+        .image-hero img{
+            margin-bottom: -250px;
+            width: 522px;
+            height: 483px;
+            display: none;
+        }
+    }
+}
+
+
+
 .hero{
     width: 100%;
     height: 730px;
@@ -416,79 +525,6 @@ header{
 
 }
 
-@media only screen and (max-width: 767px) {
-    header {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-        background-color: $primary-color;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            .logo {
-                font-size: 18px;
-                margin-right: auto;
-            }
-            .menu-toggle {
-                display: block;
-                width: 25px;
-                height: 25px;
-                border: none;
-                background: transparent;
-                cursor: pointer;
-                .icon-bar {
-                    display: block;
-                    width: 100%;
-                    height: 2px;
-                    margin: 4px auto;
-                    background-color: $primary-font-color;
-                    border-radius: 1px;
-                    transition: all 0.2s ease-in-out;
-                    &:first-child {
-                        margin-top: 0;
-                    }
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                }
-                &.active .icon-bar:first-child {
-                    transform: translateY(6px) rotate(45deg);
-                }
-                &.active .icon-bar:last-child {
-                    transform: translateY(-6px) rotate(-45deg);
-                }
-                &.active .icon-bar:nth-child(2) {
-                    opacity: 0;
-                }
-            }
-            .ul-header {
-                display: none;
-                flex-direction: column;
-                align-items: center;
-                margin: 0;
-                padding: 0;
-                li {
-                    margin-bottom: 10px;
-                    a {
-                        font-size: 14px;
-                        color: $primary-font-color;
-                        text-align: center;
-                        padding: 10px;
-                        border-radius: 5px;
-
-                        &:hover {
-                            background-color: $secondary-color;
-                            color: white;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 .haircut-service{
     height: 605px;
